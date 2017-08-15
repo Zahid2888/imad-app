@@ -5,6 +5,22 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne = {
+    title: 'Article One | Zahid',
+    heading: 'Article One',
+    date: '15 Aug 2017',
+    content: `<p>
+                    This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js. This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.
+                </p>
+                <p>
+                    This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.
+                </p>
+                <p>
+                    This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.
+                </p>`
+};
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
