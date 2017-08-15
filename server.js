@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    'article-One': {
+    'article-one': {
     title: 'Article One | Zahid',
     heading: 'Article One',
     date: '15 Aug 2017',
@@ -20,7 +20,7 @@ var articles = {
                     This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.This is the content for article one. Its just a practice webpage to learn to create new html pages and link them to main.js.
                 </p>`
 },
-    'article-Two': {
+    'article-two': {
     title: 'Article Two | Zahid',
     heading: 'Article Two',
     date: '31 Aug 2017',
@@ -29,7 +29,7 @@ var articles = {
                 </p>
                `
 },
-    'article-Three': {
+    'article-three': {
     title: 'Article Three | Zahid',
     heading: 'Article Three',
     date: '15 Sep 2017',
