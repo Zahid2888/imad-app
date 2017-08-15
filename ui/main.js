@@ -1,6 +1,11 @@
-console.log('Loaded!');
+var button = document.getElementById('counter');
 
-var img = document.getElementById('sexy');
+var counter = 0;
+button.onClick = function() {
+    counter = counter + 1;
+    var span = document.getElementById('count')
+    span.innerHtml = counter.toString();
+}
 
 var marginLeft = 0;
 function moveRight() {
