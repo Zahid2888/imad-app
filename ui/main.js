@@ -13,6 +13,8 @@ button.onclick = function() {
             }
         }
     };
+    request.open('GET','http://zahid2888.imad.hasura-app.io/counter',true);
+    request.send(null);
 };
 
 
