@@ -151,12 +151,17 @@ app.post('/login', function (req,res) {
 
 app.get('/check-login', function(req,res){
     if (req.session && req.session.auth && req.session.auth.userId) {
-        res.send('You  are logged in' + req.session.auth.userId.toString());
+        res.send('You  are logged in ' + req.session.auth.userId.toString());
             } else {
                 res.send('You are not logged in');
             }
             }
 );
+
+app.get('/logout', function(res,req){
+    delete req.session.auth;
+    res.send('Logged Out');
+});
 
 var pool = new Pool(config);
 
